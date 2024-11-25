@@ -15,6 +15,8 @@ function convertToObject(sourceString) {
       if (key && value) {
         return { ...prev, [key]: value };
       }
+
+      return prev;
     }, {});
 }
 module.exports = convertToObject;
